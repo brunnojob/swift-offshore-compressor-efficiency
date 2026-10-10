@@ -1,0 +1,20 @@
+$ bash -e -o pipefail -c swiftc Sources/main.swift -o app && ./app --self-test && ./app < examples/input.txt
+Tests passed
+{"degraded":false,"isentropicEfficiency":0.7289914337054222,"pressureRatio":4,"shaftPowerKw":160.79999999999998,"tag":"air-A"}
+{"degraded":true,"isentropicEfficiency":0.5831931469643378,"pressureRatio":4,"shaftPowerKw":200.99999999999997,"tag":"air-B"}
+
+$ ./app
+{"degraded":false,"isentropicEfficiency":0.7289914337054222,"pressureRatio":4,"shaftPowerKw":160.79999999999998,"tag":"air-A"}
+{"degraded":true,"isentropicEfficiency":0.5831931469643378,"pressureRatio":4,"shaftPowerKw":200.99999999999997,"tag":"air-B"}
+
+$ ./app
+Missing input
+
+$ ./app
+Invalid CSV row
+
+$ ./app --unsupported
+Unsupported command arguments
+
+$ ./app
+Input record too large
