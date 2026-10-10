@@ -1,0 +1,1 @@
+CSV: tag,inlet-absolute-bar,outlet-absolute-bar,inlet-K,outlet-K,mass-flow-kg-per-second. Ideal dry air: gamma 1.4 and cp 1.005 kJ/kg/K. Reported power is gas enthalpy rise; mechanical losses and real-gas effects are excluded.
